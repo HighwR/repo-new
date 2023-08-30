@@ -1,0 +1,83 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.nav {
+  background-color: #333; 
+  color: #fff; 
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  padding: 10px 20px; 
+}
+
+.nav a {
+  text-decoration: none; 
+}
+
+.nav button {
+  background-color: #555; 
+  color: #fff; 
+  border: none;
+  padding: 10px 20px; 
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.nav input[type="checkbox"] {
+  display: none; 
+}
+
+.nav input[type="checkbox"] + label::before {
+  content: "\2713"; 
+  font-size: 20px;
+  margin-right: 5px;
+}
+
+.nav input[type="checkbox"]:checked + label::before {
+  content: "\2714"; 
+  color: #33cc33; 
+}
+
+.nav button.logout-button {
+  background-color: #cc0000;
+}
+
+
+.nav button.cart-button {
+  background-color: #ff9900; 
+}
